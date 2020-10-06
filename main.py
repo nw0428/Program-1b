@@ -8,14 +8,13 @@ import sys
 # be some weird errors that need to be fixed
 
 def fun0():
-    name = ""
+    name = "" # This sets the variable name to ""
     message = "It's nice to meet you ";
     print("What is your name? ")
     name = input();
     print(message, end="")
     print(name)
     return name
-
 
 def fun1():
     f = int(input("Please give me a temperature in farenheit: "))
@@ -35,9 +34,9 @@ def fib():
         temp = a
         a = b
         b = a + temp
-        #print(str(a), end = " ")
+        print(str(a), end = " ")
         i = i + 1
-        print(i)
+        #print(i)
 
     print()
 
@@ -62,6 +61,7 @@ print("You chose " + str(choice))
 
 if (0 == choice):
     fun0();
+    
 
 if (1 == choice):
     fun1();
@@ -75,6 +75,7 @@ if (2 == choice): # If 2 is the choice you made
 #   number = (new Scanner(System.in)).nextInt();
 #   System.out.println(fun3(number));
 # }
+
 name = ""
 if (len(sys.argv) > 1):
     name = sys.argv[1]
@@ -82,8 +83,8 @@ if (len(sys.argv) > 1):
 print("Thanks " + name)
 
 
-#For homework please do at least one of the following
+# For homework please do at least one of the following
 # Fully annotate the program
-# Add Python rules to our shared class document
-# Add a code exploration/investigation/experimentation strategy you used in class to the document
+# Add Python rules (with your name) to our shared class document https://docs.google.com/document/d/1223WVDIqXFr-_MjX3zuLwJr4bzL7nSer_HqI6fkWgwM/edit#
+# Add a code exploration/investigation/experimentation strategy you used in class to the document https://docs.google.com/document/d/1223WVDIqXFr-_MjX3zuLwJr4bzL7nSer_HqI6fkWgwM/edit#
 # Get fun3 working and explain what it does
